@@ -80,8 +80,21 @@ class Encryption {
 
 
  }
+public class AlphabetConverter {
+    public static char intToAlphabet(int n) {
+        if (n >= 1 && n <= 26) {
+            return (char) ('a' + n - 1);
+        } else {
+            return '\0';
+        }
+    }
 
-
+    public static void main(String[] args) {
+        int n = 5;
+        char result = intToAlphabet(n);
+        System.out.println(result); // Output: 'e'
+    }
+}
 
 
 
